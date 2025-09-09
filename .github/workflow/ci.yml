@@ -28,7 +28,7 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: patelajay710
+          username: ajaypatel710
           password: 7030471134
 
       - name: Build and push Docker image
@@ -37,5 +37,5 @@ jobs:
           context: .
           push: true
           tags: |
-            patelajay710/ci-cd-demo:latest
-            patelajay710/ci-cd-demo:${{ github.sha }}
+            ajaypatel710/ci-cd-demo:latest
+            ajaypatel710/ci-cd-demo:${{ github.sha }}
